@@ -1,0 +1,33 @@
+.section-3{
+    display: flex;
+    background-color: black;
+    color: rgb(167, 167, 167);
+    height: 150px;
+  }
+  .section-3 > div:first-child{
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-right: 250px;
+  }
+  .section-3 > div:first-child > * {
+    margin-bottom: 10px;
+  }
+  .section-3 > div:first-child > p:nth-child(2){
+    margin-left: 15px;
+  }
+  .section-3 > div:nth-child(2) > div:first-child{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+  }
+  .section-3 > div:nth-child(2) > div:first-child > a{
+    text-decoration: none;
+    color: white;
+  }
+  .section-3 > div:nth-child(2) > div:first-child + a > p{
+    margin-top: 10px;
+  }
+  .section-3 > div:nth-child(2)> div:first-child + a{
+    text-decoration: none;
+    color: rgb(167, 167, 167);
+  }

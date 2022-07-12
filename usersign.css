@@ -1,0 +1,139 @@
+#navbar {
+    border: 1px solid black;
+    height: 130px;
+    margin-bottom: 50px;
+  }
+  #footer {
+    border: 1px solid black;
+    height: 200px;
+    margin-top: 60px;
+  }
+  #bigbox{
+     
+     /* border:1px solid black; */
+      height: 500px;
+      width: 50%;
+     margin-left: 250px;
+  }
+h1{
+  font-family: "BBText Bold", Helvetica, Arial, sans-serif;
+  line-height: 19px;
+  font-size: 21px;
+  padding: 0px 20px 0px 30px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+hr+h3{
+    margin-top: 0px;
+    background-color: hsl(0, 100%, 95%);
+
+    font-family: "BBText Bold", Helvetica, Arial, sans-serif;
+    line-height: 50px;
+    font-size: 14px;
+    font-family: 400px;
+    letter-spacing: 4px;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: -12px;
+    
+}
+h1+hr{
+color: grey;
+  margin-bottom: 0px;
+ margin-bottom: 0px;
+
+}
+h3+hr{
+  margin-top: 13px;
+}
+#container{
+  display: flex;
+  gap: 50px;
+ 
+}
+#newCust{
+  margin-top:10px;
+
+  height: 400px;
+  width: 50%;
+}
+#signin{
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  height: 300px;
+  width: 50%;
+}
+h3{
+  font-family: "BBText Bold", Helvetica, Arial, sans-serif;
+  line-height: 50px;
+  font-size: 14px;
+  font-family: 400px;
+  letter-spacing: 4px;
+  padding: 0px 30px 0px 30px;
+  margin-top: 1px;
+}
+hr{
+  color: grey;
+}
+#left,#right{
+  margin-left: 25px;
+}
+#signinbtn{
+  margin-top: 130px;
+}
+.req{
+  margin-top: 10px;
+}
+.input{
+height: 33px;
+width: 100%;
+padding: 10px;
+margin-top: -5px;
+margin-bottom: 0px
+;
+}
+#spass{
+margin-top:-20px;
+}
+#nemail,#userEmail{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#signupbtn,#signinbtn{
+  background-color: black;
+  color: white;
+  border: 0px;
+  height: 25px;
+}
+#read{
+  color: red;
+ text-decoration: underline;
+ font-family: Arial, Helvetica, sans-serif;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+.error{
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  display: none;
+}
+#signinbtn:hover{
+  color: white;
+  background-color: red;
+  border: 0px;
+}
+#signupbtn:hover{
+  color: white;
+  background-color: red;
+  border: 0px;
+}
+#agree{
+  margin-top: 20px;
+ 
+}
+#yes{
+  margin-top: 20px;
+}

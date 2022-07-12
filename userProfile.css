@@ -1,0 +1,121 @@
+
+#navbar {
+    border: 1px solid black;
+    height: 130px;
+    margin-bottom: 50px;
+  }
+  #footer {
+    border: 1px solid black;
+    height: 200px;
+    margin-top: 100px;
+  }
+#layout{
+   
+    height: 800px;
+    width: 70%;
+    margin-left: 200px;
+    display: flex;
+    
+}
+#left{
+  
+    height: 400px;
+    width: 16%;
+    padding: 20PX;
+    padding-bottom: 30PX;
+}
+
+#right{
+    height: 800px;
+    width: 78%;
+    margin-bottom: -30px;
+    display: grid;
+    gap: 1px;
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+#right>div{
+   
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 0px 50px 50px 60px ;
+    letter-spacing: 2px;
+    
+
+}
+hr{
+    color: solid black;
+    border:1px solid black;
+    background-color: black;
+    margin-bottom: 70px;
+    width: 250px;
+    margin-left: 0px;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#left{
+    padding: 15px;
+    padding-bottom: 40PX;
+    background-color: #F3EFEA;
+   padding-right: 10px;
+
+font-size: 11px;
+line-height: 22px ;
+font-weight: bold;
+}
+#left>p:hover{
+    color: red;
+}
+.bold{
+    
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+}
+a{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h4{
+ margin-top: -40px;
+ margin-bottom: 41px;
+ letter-spacing: 3px;
+}
+
+.profile{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    padding-right: 60px;
+    font-weight: bold;
+}
+.page{
+    font-size: 18px;
+    line-height: 25px;
+}
+.redirect{
+    color: red;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-right: 50px;
+    cursor: pointer;
+   
+}
+#e{
+padding-bottom: 60px;
+}
+#payment,#address,#order{
+    cursor: pointer;
+  }
+  .usermail{
+    width: 30px;
+    height: 20px;
+    color: rgb(239, 105, 22);
+  }
+  #agree{
+margin-top: 50px;
+  }

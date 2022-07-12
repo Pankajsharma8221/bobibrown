@@ -1,0 +1,49 @@
+
+#navbar {
+    border: 1px solid black;
+    height: 130px;
+    margin-bottom: 30px;
+  }
+  #footer {
+    border: 1px solid black;
+    height: 200px;
+    margin-top: 30px;
+  }
+h1{
+    letter-spacing: 5px;
+    font-family: "BBText Bold", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    margin-top: 40px;
+}
+p{
+    font-family: "BBText Bold", Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0px 150px 0px 100px;
+    margin-top: -10px;
+ 
+}
+#content{
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    position:absolute;
+
+  
+}
+.img{
+background-image: url("https://www.bobbibrown.in/media/images/account/email-sms-signup-envelope.gif");
+height: 450px;
+width: 60%;
+margin: auto;
+position: relative;
+background-repeat: no-repeat;
+background-size: contain;
+
+
+
+
+}

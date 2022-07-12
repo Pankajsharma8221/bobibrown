@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Complete</title>
+    <style>
+        body {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        #topbox {
+            width: 380px;
+            height: 650px;
+            /* border: 1px solid black; */
+            margin-top: 70px;
+        }
+
+        #top { 
+            width: 100%;
+            height: 70px;
+            border-bottom: 1px solid #949494;
+        }
+
+        #afterpay {
+            height: 26px;
+            width: 105px;
+        }
+
+        #afterpay ~ p {
+            font-family: 'Titillium Web', sans-serif;
+            margin-top: 5px;
+        }
+
+        #btn {
+            width: 100%;
+            height: 55px;
+            border: 0px solid white;
+            font-weight:bold ;
+            margin-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        #copy {
+            text-align: center;
+            margin-top: 310px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="topbox">
+        <div id="top">
+            <img id="afterpay" src="https://www.bobbibrowncosmetics.com/media/images/checkout/afterpay-logo-black.png" alt="">
+            <p>Pay in 4. Always interest-free.</p>
+        </div>
+        <h1 style="font-family: 'Titillium Web', sans-serif;margin-top: 40px;">Order Complete</h1>
+        <p style="font-family: 'Titillium Web', sans-serif;margin-top: 35px;">Your Afterpay order session was closed. Please return to Bobbi Brown to continue.</p>
+        <button id="btn">Return</button>
+        <div id="copy"><p>@2022Afterpay &nbsp;&nbsp;Terms &nbsp;&nbsp;Privacy Policy </p></div>
+    </div>
+</body>
+</html>

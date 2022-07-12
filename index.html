@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      sizes="16x16"
+      href="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/favicon-16x16.png"
+      rel="icon"
+    />
+    <script src="https://kit.fontawesome.com/2e613dc302.js" crossorigin="anonymous"></script>
+    <style>
+      * {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #navbar__container {
+        color: white;
+        background-color: black;
+        padding-top: 20px;
+        z-index: 200;
+      }
+      #navbar__container > div > a{
+        color: white;
+        text-decoration: none;
+      }
+      #navbar__container > div > a > p {
+        font-size: 11px;
+        font-weight: bold;
+        padding: 16px 7px 0;
+        letter-spacing: 2px;
+        margin-left: 50px;
+        cursor: pointer;
+      }
+      #navbar__container > div > div {
+        width: 100px;
+        display: flex;
+        padding-right: 50px;
+      }
+      #navbar__container > div > :nth-child(2) > div {
+        padding: 14px 7px 0;
+      }
+      .menu__item {
+        height: 20px;
+        width: 20px;
+      }
+      .menu__item > a > img {
+        width: 20px;
+        height: 20px;
+      }
+      #logo > img {
+        width: 100%;
+        display: inline-block;
+      }
+      #navbar__container > :first-child {
+        display: flex;
+        justify-content: space-between;
+        margin: 13px auto 0;
+        position: absolute;
+        width: 100%;
+        top: 0;
+      }
+      #navbar__container > :nth-child(2) {
+        width: 350px;
+        margin: auto;
+        margin-top: 8px;
+        z-index: 3;
+      }
+      #logo {
+        font-size: 35px;
+        text-decoration: none;
+      }
+      #section {
+        display: flex;
+        margin-left: 55px;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-bottom: 10px;
+      }
+      #section > :first-child {
+        width: 8%;
+        border-bottom: 1px solid white;
+      }
+      #section > :first-child > img {
+        padding-bottom: 6px;
+      }
+      #section > :first-child > input:focus {
+        border: none;
+      }
+      #section > :first-child > input {
+        padding-left: 4px;
+      }
+      #section > :first-child > ::placeholder {
+        letter-spacing: 1.5px;
+        line-height: 35px;
+        font-size: 13px;
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #929289;
+      }
+      #section > :nth-child(2) {
+        width: 76%;
+      }
+      #section > :nth-child(2) > div {
+        display: flex;
+      }
+      #section > :nth-child(2) > div > div {
+        padding-right: 45px;
+      }
+      #section > :nth-child(2) > div > div > a {
+        white-space: nowrap;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+      }
+      .section {
+        display: none;
+        position: sticky;
+        top: 0;
+        padding-left: 55px;
+        padding-top: 15px;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        background-color: black;
+      }
+      .section > :first-child {
+        display: flex;
+        width: 10%;
+        border-bottom: 1px solid white;
+      }
+      .section > :first-child > img {
+        width: 20px;
+        padding-bottom: 6px;
+      }
+      .section > :first-child > input:focus {
+        border: none;
+      }
+      .section > :first-child > input {
+        padding-left: 4px;
+      }
+      .section > :first-child > ::placeholder {
+        letter-spacing: 1.5px;
+        line-height: 35px;
+        font-size: 13px;
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #929289;
+      }
+      .section > :nth-child(2) {
+        width: 55%;
+      }
+      .section > :nth-child(2) > div {
+        display: flex;
+      }
+      .section > :nth-child(2) > div > div {
+        padding-right: 45px;
+      }
+      .section > :nth-child(2) > div > div > a {
+        white-space: nowrap;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+      }
+      .section > :nth-child(3) {
+        display: flex;
+        width: 7%;
+        margin-right: 70px;
+        justify-content: space-between;
+      }
+      #navbar__container > :nth-child(3) > div > img {
+        width: 20px;
+        height: 20px;
+      }
+      input {
+        background-color: black;
+        border: 0;
+        color: white;
+      }
+      input:focus {
+        outline: none;
+      }
+      .carousel {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+      }
+      .carousel__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .carousel__track-container {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      .carousel__track {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        height: 100%;
+        transition: transform 300ms ease-in-out;
+      }
+      .carousel__slide {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .carousel__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 100;
+      }
+      .carousel__button--left {
+        left: 0px;
+      }
+      .carousel__button--right {
+        right: 10px;
+      }
+      .carousel__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 200px;
+        height: 30px;
+        left: 44%;
+        bottom: 10px;
+      }
+      .carousel__indicator {
+        width: 4px;
+        height: 4px;
+        background: rgba(215, 189, 189, 0.3);
+        margin: 0 7px;
+        cursor: pointer;
+      }
+      .carousel__indicator.current-slide {
+        background: rgba(222, 215, 215, 0.8);
+      }
+      .products__container {
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 600px;
+        width: 93%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+      }
+      .products__container > .products__title {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+        letter-spacing: 8px;
+      }
+      .product__category {
+        display: flex;
+        margin: auto;
+        border-bottom: 1px solid rgb(186, 182, 182);
+        cursor: pointer;
+      }
+      .product__category > div {
+        box-sizing: border-box;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .product__category > div > div {
+        /* border: 1px solid brown; */
+        padding: 10px 70px;
+      }
+      .product__category > div > div:hover {
+        border-bottom: 1px solid black;
+      }
+      .product__category > div > div > a {
+        display: inline-block;
+        margin: auto;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 14px;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 1px;
+      }
+      .banner__image1 {
+        position: relative;
+        background: url("https://www.bobbibrown.in/media/export/cms/36696/Acn_BB_Desktop_HP_2880x1462_1.jpg");
+        width: 93%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        margin: auto;
+        margin-bottom: 70px;
+      }
+      .banner__image1 > div > :first-child {
+        font-size: 50px;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 8px;
+        margin-bottom: 10px;
+      }
+      .banner__image1 > div > :nth-child(2) > p {
+        font-weight: 100;
+        line-height: 30px;
+        font-size: 17px;
+        margin-bottom: 15px;
+      }
+      .banner__image1 > div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 45px;
+      }
+      .banner__image1 > div > :last-child > button {
+        color: white;
+        background-color: black;
+        padding: 8px 12px;
+        cursor: pointer;
+        border: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      .banner__image1 > div > :last-child > button:hover {
+        background-color: rgba(0, 0, 0, 0.75);
+      }
+      .banner__image2 {
+        position: relative;
+        background: url("https://www.bobbibrown.in/media/export/cms/36696/Acn_BB_Desktop_HP_2880x1462.jpg");
+        width: 93%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        margin: auto;
+        margin-bottom: 70px;
+      }
+      .banner__image2 > div > :first-child {
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+        letter-spacing: 8px;
+        line-height: 55px;
+        margin-bottom: 15px;
+      }
+      .banner__image2 > div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 45px;
+      }
+      .banner__image2 > div > :nth-child(2) > p {
+        font-weight: 100;
+        line-height: 30px;
+        font-size: 17px;
+        margin-bottom: 15px;
+      }
+      .banner__image2 > div > :last-child > button {
+        color: white;
+        background-color: black;
+        padding: 8px 12px;
+        cursor: pointer;
+        border: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      .banner__image3 {
+        position: relative;
+        background: url("https://www.bobbibrown.in/media/export/cms/Acn_BB_Desktop_HP_2880x1594.jpg");
+        width: 93%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        margin: auto;
+        margin-bottom: 70px;
+      }
+      .banner__image3 > div > :first-child {
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+        letter-spacing: 8px;
+        line-height: 60px;
+        margin-bottom: 15px;
+      }
+      .banner__image3 > div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 45px;
+      }
+      .banner__image3 > div > :nth-child(2) > p {
+        font-weight: 100;
+        line-height: 30px;
+        font-size: 17px;
+        margin-bottom: 15px;
+      }
+      .banner__image3 > div > :last-child > button {
+        color: white;
+        background-color: black;
+        padding: 8px 12px;
+        cursor: pointer;
+        border: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      .banner__image4 {
+        background: url("https://www.bobbibrown.in/media/export/cms/Acn_BB_1200x1200.jpg");
+        width: 93%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        margin: auto;
+        margin-bottom: 70px;
+      }
+      .ingredients__matter__container {
+        display: flex;
+        width: 93%;
+        margin: auto;
+        box-sizing: border-box;
+      }
+      .ingredients__matter__container > :first-child {
+        position: relative;
+        background-color: black;
+        color: white;
+        height: 700px;
+        width: 50%;
+      }
+      .ingredients__matter__container > :first-child > div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 45px;
+      }
+      .ingredients__matter__container > :first-child > div > :first-child {
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+        letter-spacing: 8px;
+        line-height: 60px;
+        margin-bottom: 15px;
+      }
+      .ingredients__matter__container > :first-child > div > :nth-child(2) {
+        font-weight: 100;
+        line-height: 30px;
+        font-size: 17px;
+        margin-bottom: 15px;
+      }
+      .ingredients__matter__container
+        > :first-child
+        > div
+        > :last-child
+        > button {
+        padding: 8px 12px;
+        cursor: pointer;
+        border: none;
+        font-weight: 600;
+        letter-spacing: 3px;
+        font-family: "Oswald", sans-serif;
+      }
+      .ingredients__matter__container
+        > :first-child
+        > div
+        > :last-child
+        > button:hover {
+        background-color: rgba(97, 97, 97, 0.75);
+        color: white;
+      }
+      .ingredients__matter__container > :last-child {
+        width: 50%;
+      }
+      .new {
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+        margin: auto;
+        width: 85%;
+        height: 650px;
+        box-sizing: border-box;
+        /* border: 1px solid red; */
+      }
+      .card {
+        white-space: nowrap;
+        width: 373px;
+        text-align: center;
+        /* border: 1px solid red; */
+      }
+      .text__container-p {
+        height: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 25px;
+      }
+      .card > p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .tab_image {
+        width: 100%;
+      }
+      .btn__left{
+        position: absolute;
+        top: 200%;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .btn__right{
+        position: absolute;
+        top: 200%;
+        right: 20px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .cart-btn{
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        width: 150px;
+        height: 35px;
+        cursor: pointer;
+      }
+      .section-2{
+        display: flex;
+        width: 93%;
+        justify-content: space-between;
+        margin: auto;
+      }
+      .section-2 > div{
+        width: 22%;
+      }
+      .section-2 > div > :first-child > img {
+        width: 100%;
+      }
+      .section-2 > div > :nth-child(2) > h4{
+        margin-top: 20px;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+      .section-2 > div > :nth-child(3) > p{
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+      .section-2 > div > :last-child{
+        text-decoration: none;
+        color: black;
+        text-decoration: underline;
+        font-size: 11px;
+        letter-spacing: 1px;
+      }
+      .section-2 > div > :last-child:hover{
+        color: red;
+      }
+      .black{
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+      }
+      .footer__container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        background-color: black;
+      }
+      .footer__container > .help__section,.accounts__section > h3{
+        color: white;
+      }
+      .footer__container > div > a{
+        text-decoration: none;
+        color: white;
+      }
+      .user-details__section{
+        width: 260px;
+        margin-right: 290px;
+      }
+      .user-details__section > a > p{
+        font-weight: 300;
+        text-decoration: underline;
+        color: white;
+      }
+      .user-details__section > button{
+        margin-top: 20px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        padding: 12px 10px;
+        cursor: pointer;
+      }
+      .user-details__section > input {
+        border: 1px solid white;
+        height: 40px;
+        width: 250px;
+      }
+      .user-details__section > h4{
+        color: white;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-weight: 6
+        
+        
+        00;
+      }
+      .user-details__section > input::placeholder{
+        color: white;
+        padding-left: 15px;
+      }
+      .user-details__section > div{
+        margin-top: 30px;
+        display: flex;
+        gap: 25px;
+      }
+      .user-details__section > *{
+        margin-bottom: 20px;
+      }
+      .help__section{
+        margin-left: 50px;
+      }
+      .help__section > select{
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        width: 250px;
+        height: 40px;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .help__section > a > *{
+        margin-top: 10px;
+      }
+      .user-details__section , .accounts__section,.help__section{
+        margin-top: 40px;
+      }
+      .accounts__section > h3{
+        color: white;
+        margin-bottom: 20px;
+      } 
+      .accounts__section > a > p{
+        margin-top: 10px;
+      }
+      .fa-brands{
+        cursor: pointer;
+      }
+      .section-3{
+        display: flex;
+        background-color: black;
+        color: rgb(167, 167, 167);
+        height: 150px;
+      }
+      .section-3 > div:first-child{
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-right: 250px;
+      }
+      .section-3 > div:first-child > * {
+        margin-bottom: 10px;
+      }
+      .section-3 > div:first-child > p:nth-child(2){
+        margin-left: 15px;
+      }
+      .section-3 > div:nth-child(2) > div:first-child{
+        margin-top: 30px;
+        display: flex;
+        gap: 50px;
+      }
+      .section-3 > div:nth-child(2) > div:first-child > a{
+        text-decoration: none;
+        color: white;
+      }
+      .section-3 > div:nth-child(2) > div:first-child + a > p{
+        margin-top: 10px;
+      }
+      .section-3 > div:nth-child(2)> div:first-child + a{
+        text-decoration: none;
+        color: rgb(167, 167, 167);
+      }
+      .arrow{
+        display: none;
+        position: sticky;
+        z-index: 500;
+        top: 500px;
+        left: 94%;
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        border: 1px solid white;
+        background-color: black;
+        cursor: pointer;
+      }
+      .arrow > *{
+        text-align: center;
+        margin-top: 6px;
+        color: white;
+      }
+    </style>
+    <title>
+      Bobbi Brown India - Skincare and Makeup Products | Official Site
+      bobbibrown.in
+    </title>
+  </head>
+  <body>
+    <!-- Used BEM convention -->
+    <!-- Navbar -->
+    <div id="navbar__container">
+      <div>
+        <a href="gsignup.html"><p>EMAIL SIGN UP</p></a>
+        <div>
+          <div class="menu__item">
+            <a href="#">
+              <img
+                src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"
+                alt="location"
+              />
+            </a>
+          </div>
+          <div class="menu__item">
+            <a  id="profile" href="#">
+              <img
+                src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"
+                alt="profile"
+              />
+            </a>
+          </div>
+          <div class="menu__item">
+            <a href="Ncart.html">
+              <img
+                src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"
+                alt="cart"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="homepage.html" id="logo">
+          <img
+            src="https://www.bobbibrown.in/media/export/cms/logo.png"
+            alt="Bobbi Brown"
+          />
+        </a>
+      </div>
+      <div id="section">
+        <div>
+          <img
+            src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg"
+            alt="search_icon"
+          />
+          <input type="text" placeholder="SEARCH" />
+        </div>
+        <div>
+          <div>
+            <div class="link_wrapper"><a href="#">NEW</a></div>
+            <div class="link_wrapper"><a href="#">FAVOURITES</a></div>
+            <div class="link_wrapper"><a href="makeup.html">MAKEUP</a></div>
+            <div class="link_wrapper"><a href="skincare.html">SKINCARE</a></div>
+            <div class="link_wrapper"><a href="#">MINIBAR</a></div>
+            <div class="link_wrapper"><a href="#">OFFERS</a></div>
+            <div class="link_wrapper"><a href="#">VIRTUAL SERVICES</a></div>
+            <div class="link_wrapper"><a href="#">DISCOVER</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div>
+        <img
+          src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg"
+          alt="search_icon"
+        />
+        <input type="text" placeholder="SEARCH" />
+      </div>
+      <div>
+        <div>
+          <div class="link_wrapper"><a href="#">NEW</a></div>
+          <div class="link_wrapper"><a href="#">FAVOURITES</a></div>
+          <div class="link_wrapper"><a href="#">MAKEUP</a></div>
+          <div class="link_wrapper"><a href="#">SKINCARE</a></div>
+          <div class="link_wrapper"><a href="#">MINIBAR</a></div>
+          <div class="link_wrapper"><a href="#">OFFERS</a></div>
+          <div class="link_wrapper"><a href="#">VIRTUAL SERVICES</a></div>
+          <div class="link_wrapper"><a href="#">DISCOVER</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="menu__item">
+          <a href="#">
+            <img
+              src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"
+              alt="location"
+            />
+          </a>
+        </div>
+        <div class="menu__item">
+          <a href="#">
+            <img
+              src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"
+              alt="profile"
+            />
+          </a>
+        </div>
+        <div class="menu__item">
+          <a href="Ncart.html">
+            <img
+              src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"
+              alt="cart"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- carousel / image slider section -->
+    <div class="carousel">
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide">
+            <a href="#">
+              <img
+                class="carousel__image"
+                src="https://www.bobbibrown.in/media/export/cms/39039/Acn_BB_Desktop_HP_2880x1000.jpg"
+                alt="makeup image"
+              />
+            </a>
+          </li>
+          <li class="carousel__slide">
+            <a href="#">
+              <img
+                class="carousel__image"
+                src="https://www.bobbibrown.in/media/export/cms/38176/Acn_BB_Desktop_MPP_2880x1000_Eng_1.jpg"
+                alt="skin concealer stick image"
+              />
+            </a>
+          </li>
+          <li class="carousel__slide">
+            <a href="#">
+              <img
+                class="carousel__image"
+                src="https://www.bobbibrown.in/media/export/cms/Acn_BB_Desktop_HP_2880x1000_3.jpg"
+                alt="consultation with artist image"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--left">❮</button>
+      <button class="carousel__button carousel__button--right">❯</button>
+      <!-- slider nav dots -->
+      <div class="carousel__nav">
+        <div class="carousel__indicator current-slide"></div>
+        <div class="carousel__indicator"></div>
+        <div class="carousel__indicator"></div>
+      </div>
+    </div>
+    <div class="arrow">
+      <h1>&#8593</h1>
+    </div>
+    <div class="products__container">
+      <div class="products__title">GOTTA HAVE IT</div>
+      <div class="product__category">
+        <div>
+          <div>
+            <a href="#">NEW</a>
+          </div>
+          <div class="minis"><a href="#">MINIS</a></div>
+          <div class="fav"><a href="#">TARA'S FAVOURITES</a></div>
+        </div>
+      </div>
+      <div class="new"></div>
+      <div class="products"></div>
+      <button class="btn__left left">❮</button
+      ><button class="btn__right right">❯</button>
+    </div>
+    <div class="banner__image1">
+      <div>
+        <div>GO ALL IN ON SKIN</div>
+        <div>
+          <p>
+            With Skin Long-Wear Weightless Foundation SPF 15, <br />
+            a 16-hour lasting, lightweight foundation with matte coverage <br />
+            that is sweat and humidity-resistant and feels like skin. <br />
+            Starts at Rs. 1,990
+          </p>
+        </div>
+        <div>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+    </div>
+    <div class="banner__image2">
+      <div>
+        <div>
+          OUR #1 ALL-IN-ONE <br />
+          MOISTURIZER & <br />
+          PRIMER
+        </div>
+        <div>
+          <p>
+            Vitamin Enriched Face Base primes, plumps and nourishes skin for
+            <br />
+            smooth makeup application. Starts at Rs. 990. <br />
+            1 Vitamin Enriched Face Base is sold every 24 seconds Globally*
+          </p>
+        </div>
+        <div>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+    </div>
+    <div class="banner__image3">
+      <div>
+        <div>
+          CRUSH AT<br />
+          FIRST SWIPE <br />
+        </div>
+        <div>
+          <p>
+            Treat your lips to the lived-in look of a lipstick
+            <br />
+            with the hydrating feel of a balm <br />
+            Starts at Rs. 1,250
+          </p>
+        </div>
+        <div>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+    </div>
+    <div class="ingredients__matter__container">
+      <div>
+        <div>
+          <div>INGREDIENTS MATTER</div>
+          <div>
+            <p>
+              Learn what's behind your favourite Bobbi Brown essentials in
+              <br />
+              our NEW Ingredient Glossary.
+            </p>
+          </div>
+          <div>
+            <button>EXPLORE INGREDIENTS</button>
+          </div>
+        </div>
+      </div>
+      <div class="banner__image4"></div>
+    </div>
+    <div class="section-2">
+      <div>
+        <div>
+          <img src="https://www.bobbibrown.in/media/export/cms/Live-Chat_500x500.jpg" alt="chat-live">
+        </div>
+        <div>
+          <h4>LIVE CHAT</h4>
+        </div>
+        <div>
+          <p>Chat with a makeup artist to get <br /> product recommendations.</p>
+        </div>
+        <a href="#">CHAT NOW</a>
+      </div>
+      <div>
+        <div>
+          <img src="https://www.bobbibrown.in/media/export/cms/Samples_500x500.jpg" alt="chat-live">
+        </div>
+        <div>
+          <h4>SAMPLE ON EVERY PURCHASE</h4>
+        </div>
+        <div>
+          <p>Select a free sample at checkout with <br> any order*</p>
+        </div>
+        <a href="#">SHOP NOW</a>
+      </div>
+      <div>
+        <div>
+          <img src="https://www.bobbibrown.in/media/export/cms/Shipping-&-Returns_500x500.jpg" alt="chat-live">
+        </div>
+        <div>
+          <h4>FREE SHIPPING</h4>
+        </div>
+        <div>
+          <p>Get your favorites delivered straight <br>
+            to your door - every shipment on us</p>
+        </div>
+        <a href="#">SHOP NOW</a>
+      </div>
+      <div>
+        <div>
+          <img src="https://www.bobbibrown.in/media/export/cms/Virtual-Consults_500x500.jpg" alt="chat-live">
+        </div>
+        <div>
+          <h4>VIRTUAL CONSULTATION</h4>
+        </div>
+        <div>
+          <p>Get personalized recommendation on <br>
+            our bestsellers with Virtual <br>
+            Artistry Consultations</p>
+        </div>
+        <a href="#">BOOK NOW</a>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__container">
+        <div class="help__section">
+          <h3>NEED HELP?</h3>
+          <a href="#"><p>Email Customer Service</p></a>
+          <a href="#"><p>Call Us</p></a>
+          <a href="#"><p>Shipping & Return policy</p></a>
+          <a href="#"><p>FAQS</p></a>
+          <a href="#"><p>Careers</p></a>
+          <a href="#"><p>English | Hindi</p></a>
+          <select id="location">
+            <option value="choose">CHOOSE LOCATION</option>
+            <option value="India">INDIA</option>
+            <option value="Bangladesh">BANGLADESH</option>
+            <option value="Pakistan">PAKISTAN</option>
+            <option value="Usa">USA</option>
+            <option value="Uk">UK</option>
+          </select>
+        </div>
+        <div class="accounts__section">
+          <h3>MY BOBBI BROWN</h3>
+          <a href="#"><p>My Account</p></a>
+          <a href="#"><p>My Account</p></a>
+          <a href="#"><p>Store Locator</p></a>
+        </div>
+        <div class="user-details__section">
+          <input type="text" id="email" placeholder="ENTER YOUR EMAIL">
+          <input type="text" id="phone" placeholder="ENTER YOUR MOBILE PHONE">
+          <a href="#"><p>How do we use your data?</p></a>
+          <button>SUBMIT</button>
+          <h4>FOLLOW US</h4>
+          <div>
+            <div>
+              <a href="#"><i class="fa-brands fa-2x fa-facebook-f black"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fa-brands fa-2x fa-youtube black"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fa-brands fa-instagram fa-2x black"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="section-3">
+        <div>
+          <p>© Bobbi Brown Professional Cosmecticcs, Inc. All worldwide rights reserved.</p>
+          <p>Sold by Shoppers Stop Ltd.</p>
+        </div>
+        <div>
+          <div>
+            <a href="#"><p>Terms and Conditions</p></a>
+            <a href="#"><p>Terms of Use</p></a>
+          </div>
+          <a href="#"><p>Privacy and Cookie Policy</p></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  let new_data = [
+    {
+      prod_img:
+        "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_ERFJ12_1080x1080_0.jpg",
+      prod_name: "SKIN CONCEALER STICK",
+      prod_desc: "Easy-to-use, long-lasting concealer stick.",
+      prod_category: "Category : Makeup",
+      price: "₹ 2850.00",
+    },
+    {
+      prod_img:
+        "https://www.bobbibrown.in/media/export/cms/products/v2_1080x1080/bb_sku_EPYL03_1080x1080_0.jpg",
+      prod_name: "FACE AND CHEEK PALETTE",
+      prod_category: "Category : Makeup",
+      price: "₹ 4250.00",
+    },
+    {
+      prod_img:
+        "https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_E96E40_600x600_0.jpg",
+      prod_name: "LONG-WEAR CREAM SHADOW STICK",
+      prod_desc:
+        "Effortless and high impact-that's the essence of NEW Long-Wear Cream Shadow Stick. This do-it-all formula glides on tug-free and can be used to shade, define, smoke up and highlight eyes",
+      prod_category: "Category : Makeup",
+      price: "₹ 3300.00",
+    },
+  ];
+
+  // variables needed for slider
+  const track = document.querySelector(".carousel__track");
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector(".carousel__button--right");
+  const prevButton = document.querySelector(".carousel__button--left");
+  const dotsNav = document.querySelector(".carousel__nav");
+  const dots = Array.from(dotsNav.children);
+
+  // to get the width of the slide
+  const slideWidth = slides[0].getBoundingClientRect().width;
+
+  // arrange the slides one beside another
+
+  // slides[0].style.left = slideWidth * 0 + "px";
+  // slides[1].style.left = slideWidth * 1 + "px";
+  // slides[2].style.left = slideWidth * 2 + "px";
+
+  const setSlidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + "px";
+  };
+  slides.forEach(setSlidePosition);
+
+  const moveToSlide = (track, currentSlide, targetSlide) => {
+    track.style.transform = "translateX(-" + targetSlide.style.left + ")";
+    currentSlide.classList.remove("current-slide");
+    targetSlide.classList.add("current-slide");
+  };
+
+  const updateDots = (currentDot, targetDot) => {
+    currentDot.classList.remove("current-slide");
+    targetDot.classList.add("current-slide");
+  };
+
+  // moving to previous slide
+  prevButton.addEventListener("click", (e) => {
+    const currentSlide = track.querySelector(".current-slide");
+    const prevSlide = currentSlide.previousElementSibling;
+    const currentDot = dotsNav.querySelector(".current-slide");
+    const prevDot = currentDot.previousElementSibling;
+
+    moveToSlide(track, currentSlide, prevSlide);
+    updateDots(currentDot, prevDot);
+  });
+
+  // moving to next slide
+  nextButton.addEventListener("click", (e) => {
+    const currentSlide = track.querySelector(".current-slide");
+    const currentDot = dotsNav.querySelector(".current-slide");
+    const nextDot = currentDot.nextElementSibling;
+    const nextSlide = currentSlide.nextElementSibling;
+
+    moveToSlide(track, currentSlide, nextSlide);
+    updateDots(currentDot, nextDot);
+  });
+
+  // click the now indicator , move to that slide
+  dotsNav.addEventListener("click", (e) => {
+    // clicked indicator
+    const targetDot = e.target.closest("div");
+
+    if (!targetDot) return;
+
+    const currentSlide = track.querySelector(".current-slide");
+    const curentDot = dotsNav.querySelector(".current-slide");
+    const targetIndex = dots.findIndex((dot) => dot === targetDot);
+    const targetSlide = slides[targetIndex];
+
+    // FIXME: dots highlight not changing while clicking, error currentDot is undefined
+    moveToSlide(track, currentSlide, targetSlide);
+    updateDots(currentDot, targetDot);
+  });
+
+  // To make navbar sticky
+  const body = document.body;
+  let lastScroll = 0;
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= 336) {
+      document.querySelector(".section").style.display = "flex";
+      document.querySelector(".section").style.position = "sticky";
+      document.querySelector(".section").style.top = "0";
+      document.querySelector(".section").style.zIndex = "200";
+      document.querySelector(".arrow").style.display = "block";
+
+    } else {
+      document.querySelector(".section").style.display = "none";
+      document.querySelector(".arrow").style.display = "none";
+    }
+
+    document.querySelector(".arrow").addEventListener("click",topFunc);
+    function topFunc(){
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  });
+
+  const new_tab = document.querySelector(".new");
+
+  new_data.forEach((elem) => {
+    let div = document.createElement("div");
+    div.setAttribute("class", "card");
+
+    let img_div = document.createElement("div");
+    img_div.setAttribute("class", "img__div");
+
+    let text_container_div = document.createElement("div");
+    text_container_div.setAttribute("class", "text__container");
+
+    let h3_container = document.createElement("div");
+    h3_container.setAttribute("class", "text__container-h3");
+
+    let p_container = document.createElement("div");
+    p_container.setAttribute("class", "text__container-p");
+
+    let img = document.createElement("img");
+    img.setAttribute("class", "tab_image");
+    img.src = elem.prod_img;
+
+    let prod_name = document.createElement("h3");
+    prod_name.innerText = elem.prod_name;
+
+    let prod_desc = document.createElement("p");
+    prod_desc.innerText = elem.prod_desc;
+
+    let prod_category = document.createElement("p");
+    prod_category.innerText = elem.prod_category;
+
+    let price = document.createElement("p");
+    price.innerText = elem.price;
+
+    img_div.append(img);
+
+    p_container.append(prod_desc, prod_category, price);
+    h3_container.append(prod_name);
+
+    text_container_div.append(img_div, h3_container, p_container);
+    let btn = document.createElement("button");
+    btn.setAttribute("class","cart-btn")
+    btn.innerText = "ADD TO BAG"
+    div.append(text_container_div,btn);
+
+    new_tab.append(div);
+    new_tab.style.zIndex = "100";
+  });
+
+
+  let profile = document.querySelector("#profile").addEventListener("click",proFunc);
+
+  function proFunc(){
+    // event.preventDefault();
+    let userData = JSON.parse(localStorage.getItem("userData"));
+    if(userData == null || userData == undefined ){
+      window.location.href = "usersign.html";
+    }
+    else{
+      window.location.href = "userProfile.html";
+    }
+  }
+</script>

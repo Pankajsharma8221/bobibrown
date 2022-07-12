@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <style>
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: content-box;
+}
+
+        #containar{
+            /* border: 1px solid black; */
+            display:grid;
+            width: auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3 fr);
+            height: auto;
+        }
+#navbar{
+    /* border: 1px solid rgb(218, 20, 20); */
+            width: auto;
+            height: auto;
+            margin-bottom: 30px
+
+}
+
+
+
+#cont{
+    /* border: 1px solid rgb(0, 0, 0); */
+            width:95%;
+            height: auto;
+            margin :auto;
+
+flex-direction: column;
+gap:25px;
+margin-bottom: 30px;
+   
+
+
+}
+#footer{
+    border: 1px solid rgb(0, 0, 0);
+            width: auto;
+            height: auto;
+
+
+}
+
+.shopcount{
+    display:flex;
+    margin: auto;
+    /* font-family:  "BBSans Regular", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px; */
+    justify-content: center;
+
+
+}
+
+.shopcount>p{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 7px;
+    font-weight: bold;
+}
+.block{
+    width: auto;
+    background-color: #EFF0F0;
+    height: 40px;
+    border-top: 1px solid black;
+
+
+}
+.block2{
+    height: auto;
+    width: auto;
+
+   
+}
+.block2>p:first-child{
+background-color: white;
+border-top: 1px solid black;
+height: 15px;
+width: auto;
+}
+.parr{
+    background-color: #EFF0F0;
+    border-top: 1px solid black;
+    /* height: 40px; */
+width: auto;
+/* color: red; */
+text-align: center;
+position: relative;
+
+
+}
+
+
+#Ncartproduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+/* .parr{
+    position: relative ;
+} */
+.chill{
+    position:absolute ; 
+ left: 50%;
+ top:50%;
+ transform: translate(-50%, -50%);
+
+
+    text-align: center;
+}
+
+p.gentelreminder {
+    text-align: center;
+}
+
+button#bestseller_button {
+    width: 30%;
+    height: auto;
+    background: black;
+    color: white;
+    border: none;
+    padding: 16px 16px;
+    font-size: 16px;
+    margin: auto;
+}
+button#goshop_button {
+    width: 30%;
+    height: auto;
+    background: black;
+    color: white;
+    border: none;
+    padding: 16px 16px;
+    font-size: 16px;
+    margin: auto;
+
+}
+
+
+#cartcard>img{
+    /* border:1px solid green; */
+    margin: auto;
+    display: block;
+    transform: scale(0.5);
+}
+.protital{
+    margin-top: -59px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 86px;
+    font-family: system-ui;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.proprice{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.atc{
+    margin: auto;
+    display: block;
+    width: 45%;
+    height: auto;
+    background: black;
+    color: white;
+    border: none;
+    padding: 9px 7px;
+    font-family: system-ui;
+    font-size: 16px;
+    font-weight: 700;
+   
+  
+}
+
+
+.atcimg{
+    width: 20%;
+}
+
+
+
+.bb{
+    display: flex;
+    
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-top: 0.5px solid black;
+    gap:60px;
+    margin-top: 30px;
+
+}
+.protital
+.b2{
+    display: flex;
+    flex-direction: column;
+    /* width: 580px; */
+  
+}
+.b2{
+    width:590px
+}
+.b4{
+    justify-content:space-between ;
+}
+
+.b3{
+    justify-content: space-between;
+    display: flex;
+   
+    align-items: center;
+    gap: 145px;
+    margin-bottom: 41px;
+}
+
+.del{
+    color: black;
+    font-size: 26px;
+}
+
+
+h2{
+width: auto;
+color: black;
+width: auto;
+    
+    font-size: 21px;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+select{
+    width: 50px;
+    height: 50px;
+    font-size: 21px;
+}
+
+
+/* ====================================================== */
+
+#checkout{
+     display: flex; 
+     flex-direction: column;
+    height: 100%;
+    /* border:1px solid black;  */
+}
+
+
+
+
+.box11{
+    /* margin: 20px 10px; */
+    height: 10%;
+    background-color: #EFF0F0;
+    /* border:1px solid green; */
+    width: 100%;
+
+}
+
+
+.checkoutbutton{
+    width: auto;
+    padding:15px 120px;
+    /* font-size: 15px; */
+    margin: auto;
+    display: block;
+ 
+    margin: auto;
+    transform: translate(0,50%);
+    border:none
+}
+
+
+
+/* ============================= */
+
+.box22{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    
+}
+.inblock1,.inblock2,.inblock3,.inblock5{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+
+}
+
+.inblock1>h4:first-child,.inblock2>h4:first-child,.inblock3>h4:first-child,.inblock5>h4:first-child{
+    text-align: start;
+    font-family: system-ui
+}
+.inblock1>h4:first-child,.inblock2>h4:first-child,.inblock3>h4:first-child{
+    color: #929292;
+    font-family: system-ui
+    
+}
+.inblock5>h4:first-child{
+    width: 70%;
+}
+.inblock5>h4:nth-child(2){
+    margin-right: 12px;
+    font-size: 24px;
+}
+.inblock4{
+    border: 1px solid #929292;
+    padding: 15px 15px;
+    margin-top:20px;
+}
+.inblock4>h4{
+    text-align: center;
+    color: #929292;
+}
+
+
+
+.inblockbox{
+    display: flex;
+    flex-direction: column;
+    background-color: #EFF0F0;
+    margin:15px;
+    padding: 18px 20px;
+
+}
+.inblock6{
+display: flex;
+margin-bottom: 15px;
+justify-content: space-between;
+}
+
+.inblock6>h4:nth-child(1){
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    margin-left: 12px;
+}
+.inblock6>h4:nth-child(2){
+    font-family: 'Oswald', sans-serif;
+    /* font-size: 20px; */
+    width: 30px;
+    height: 30px;
+    font-size: 23px;
+}
+.inblock7{
+display: flex;
+flex-direction: column;
+}
+
+.inblockbox>p:nth-child(3){
+    margin-bottom: 12px;
+}
+
+.inblockbox>p:nth-child(4){
+    margin-bottom: 12px;
+    font-family: system-ui;
+    text-decoration: underline;
+}
+
+
+
+.applycode{
+    background-color: black;
+    color:white;
+    padding:10px 15px ;
+    margin: 15px 0px ;
+}
+.inputoffer{
+    height:40px ;
+    text-decoration: underline;
+}
+.box33>h4{
+    margin-bottom: 35px;
+    margin-left: 12px;
+    letter-spacing: 2px;
+}
+.box33>h4:nth-child(2),.box33>h4:nth-child(3),.box33>h4:nth-child(4),.box33>h4:nth-child(5),.box33>h4:nth-child(6){
+    color: red;
+    text-decoration: underline;
+}
+.box33{
+    padding:20px 0px
+}
+/* ==================================================== */
+.sampledisplay{
+    display: flex;
+    gap:20px
+}
+
+
+.sampcartcard>img{
+    display: block;
+    margin: auto;
+    
+}
+.sampcartcard>h3{
+    font-family: system-ui;
+    font-size: 18px;
+    margin: 20px 15px;
+    text-align: center;
+    font-weight: 500;
+
+}
+.sampcartcard>p{
+    text-align: center;
+    margin:20px 0px;
+
+}
+
+.selec{
+    margin:auto;
+    display: block;
+    padding:11px 54px;
+    background-color: white;
+    border: 1px solid black;
+margin-bottom: 12px;
+font-family: system-ui;
+    font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+.indiprice,
+.prototal{
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    
+    <div id="containar">
+        <div id="navbar">
+
+
+
+            <div id="navbar__container">
+                <div>
+                  <p>EMAIL SIGN UP</p>
+                  <div>
+                    <div class="menu__item">
+                      <a href="#">
+                        <img
+                          src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"
+                          alt="location"
+                        />
+                      </a>
+                    </div>
+                    <div class="menu__item">
+                      <a href="usersign.html">
+                        <img
+                          src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"
+                          alt="profile"
+                        />
+                      </a>
+                    </div>
+                    <div class="menu__item">
+                      <a href="Ncart.html">
+                        <img
+                          src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"
+                          alt="cart"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <a href="homepage.html" id="logo">
+                    <img
+                      src="https://www.bobbibrown.in/media/export/cms/logo.png"
+                      alt="Bobbi Brown"
+                    />
+                  </a>
+                </div>
+                <div id="section">
+                  <div>
+                    <img
+                      src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg"
+                      alt="search_icon"
+                    />
+                    <input class=inputsherch type="text" placeholder="SEARCH" />
+                  </div>
+                  <div>
+                    <div>
+                      <div class="link_wrapper"><a href="#">NEW</a></div>
+                      <div class="link_wrapper"><a href="#">FAVOURITES</a></div>
+                      <div class="link_wrapper"><a href="makeup.html">MAKEUP</a></div>
+                      <div class="link_wrapper"><a href="skincare.html">SKINCARE</a></div>
+                      <div class="link_wrapper"><a href="#">MINIBAR</a></div>
+                      <div class="link_wrapper"><a href="#">OFFERS</a></div>
+                      <div class="link_wrapper"><a href="#">VIRTUAL SERVICES</a></div>
+                      <div class="link_wrapper"><a href="#">DISCOVER</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+        </div>
+
+
+
+        <div id="cont" style="display:flex;flex-direction:row; ">
+            <div class="box1">        
+                <div class="shopcount"><p>SHOPPING CART</p>
+                <P>(</P>
+                <P class="countnum">0</P>
+                <P>)</P>
+                
+                </div>
+                <div class="block"></div>
+                
+                <div class="block2">
+                    <div class="sampledisplay"></div>
+                    <div class="parr" ></div>
+                </div>
+                <div id="chdata" style="display: flex; flex-direction: column;gap: 20px;"></div>
+                
+                <div id="Ncartproduct"> </div>
+                
+                </div>
+                <div class="box2">
+                    <div id="checkout"></div>
+                </div>
+            </div>
+           
+    
+            
+            
+            
+            <div id="footer">
+
+                <div class="section-3">
+                    <div>
+                      <p>© Bobbi Brown Professional Cosmecticcs, Inc. All worldwide rights reserved.</p>
+                      <p>Sold by Shoppers Stop Ltd.</p>
+                    </div>
+                    <div>
+                      <div>
+                        <a href="#"><p>Terms and Conditions</p></a>
+                        <a href="#"><p>Terms of Use</p></a>
+                      </div>
+                      <a href="#"><p>Privacy and Cookie Policy</p></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+       
+
+        
+</div>
+
+</body>
+<script src="Ncart.js"></script>
+</html>

@@ -1,0 +1,183 @@
+
+
+#body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+#heading {
+     display: flex;
+     height: 130px;
+     width: 103%;
+     background-color: black;
+     margin-top: -30px;
+     text-align: center;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     font-family: BBText Regular,Helvetica,Arial,sans-serif;
+     font-size: 35px;
+     line-height: 19px;
+}
+
+#box {
+    display: flex;
+    height: 1400px;
+    width: 70%;
+    /* border: 1px black solid;   */
+    margin-left: 240px; 
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#checkout {
+    width: 63%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+#Reward {
+    width: 34.5%;
+    height: 100%;
+    /* border: 1px solid black; */
+    /* background-color:rgb(231, 225, 225); */
+    margin-left: 20px;
+}
+
+.headingc {
+    width: 100%;
+    height: 80px;
+    border: 1px solid white;
+    border-bottom: 3px solid black;
+    
+}
+
+.mail {
+    width: 100%;
+    height: 55px;
+    border-top: 1px solid grey;
+   
+}
+
+#shippingform {
+    
+    width: 100%;
+    height: 650px;
+    /* border: 1px solid black; */
+   align-items: center;
+  
+    
+}
+ 
+.name {
+    /* display: flex; */
+    width: 45%;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    border: 1px light gray;
+    
+}
+
+.address {
+   width: 94%;
+   height: 40px;
+   margin-bottom: 20px;
+   margin-left: 15px;
+}
+
+.add {
+    width: 29%;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+#state {
+    width: 27%;
+    height: 44px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.freeship {
+    border-bottom: 1px solid black;
+    width: 90%;
+    height: 40px;
+    margin-top: 68px;
+    margin-left: 14px;
+   
+}
+#su {
+    display: flex;
+    /* border-bottom: 1px solid black;  */
+}
+
+#subbtton {
+    margin-left: 20px;
+    height: 30px ;
+    width: 100px;
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#bag {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    /* border: 1px solid black; */
+    background-color:rgb(231, 225, 225);
+    /* items added in cart will be pasted here */
+    justify-content: center;
+    
+
+}
+
+#innerbag {
+    width: 92%;
+    height: 100%;
+    /* border: 1px solid black; */
+    
+}
+
+#footer {
+    width :103%;
+    height:190px;
+    border: 1px solid;
+    margin-top: 90px;
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+}
+
+.foot {
+    width: 33%;
+    height: 100px;
+    border: 1px solid black;
+    color: white;
+    margin-top: 60px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+
+#lastbox {
+    width: 100%;
+    height: 60px;
+    /* border-top: 1px solid black; */
+    border-bottom: 1px solid black;
+    text-align: center;
+    /* padding-top: 15px; */
+}
+
+#donate {
+    width:100%;
+    height: 500px;
+    /* border: 1px solid black; */
+    /* margin-top: 30px; */
+}

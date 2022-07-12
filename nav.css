@@ -1,0 +1,358 @@
+.section {
+  display: none;
+  position: sticky;
+  top: 0;
+  padding-left: 55px;
+  padding-top: 15px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  background-color: black;
+}
+.section > :first-child {
+  display: flex;
+  width: 10%;
+  border-bottom: 1px solid white;
+}
+.section > :first-child > img {
+  width: 20px;
+  padding-bottom: 6px;
+}
+.section > :first-child > input:focus {
+  border: none;
+}
+.section > :first-child > input {
+  padding-left: 4px;
+}
+.section > :first-child > ::placeholder {
+  letter-spacing: 1.5px;
+  line-height: 35px;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #929289;
+}
+.section > :nth-child(2) {
+  width: 55%;
+}
+.section > :nth-child(2) > div {
+  display: flex;
+}
+.section > :nth-child(2) > div > div {
+  padding-right: 45px;
+}
+.section > :nth-child(2) > div > div > a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.section > :nth-child(3) {
+  display: flex;
+  width: 7%;
+  margin-right: 70px;
+  justify-content: space-between;
+}
+ 
+ 
+ /* floting navbar */
+ .section {
+  display: none;
+  position: sticky;
+  top: 0;
+  padding-left: 55px;
+  padding-top: 15px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  background-color: black;
+}
+.section > :first-child {
+  display: flex;
+  width: 10%;
+  border-bottom: 1px solid white;
+}
+.section > :first-child > img {
+  width: 20px;
+  padding-bottom: 6px;
+}
+.section > :first-child > input:focus {
+  border: none;
+}
+.section > :first-child > input {
+  padding-left: 4px;
+}
+.section > :first-child > ::placeholder {
+  letter-spacing: 1.5px;
+  line-height: 35px;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #929289;
+}
+.section > :nth-child(2) {
+  width: 55%;
+}
+.section > :nth-child(2) > div {
+  display: flex;
+}
+.section > :nth-child(2) > div > div {
+  padding-right: 45px;
+}
+.section > :nth-child(2) > div > div > a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.section > :nth-child(3) {
+  display: flex;
+  width: 7%;
+  margin-right: 70px;
+  justify-content: space-between;
+}
+/* floting nav bar */
+.black{
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+}
+.footer__container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: black;
+}
+.footer__container > .help__section,.accounts__section > h3{
+  color: white;
+}
+.footer__container > div > a{
+  text-decoration: none;
+  color: white;
+}
+.user-details__section{
+  width: 260px;
+  margin-right: 290px;
+}
+.user-details__section > a > p{
+  font-weight: 300;
+  text-decoration: underline;
+  color: white;
+}
+.user-details__section > button{
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  padding: 12px 10px;
+  cursor: pointer;
+}
+.user-details__section > input {
+  border: 1px solid white;
+  height: 40px;
+  width: 250px;
+}
+.user-details__section > h4{
+  color: white;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  font-weight: 6
+  
+  
+  00;
+}
+.user-details__section > input::placeholder{
+  color: white;
+  padding-left: 15px;
+}
+.user-details__section > div{
+  margin-top: 30px;
+  display: flex;
+  gap: 25px;
+}
+.user-details__section > *{
+  margin-bottom: 20px;
+}
+.help__section{
+  margin-left: 50px;
+}
+.help__section > select{
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  margin-top: 10px;
+}
+.help__section > a > *{
+  margin-top: 10px;
+}
+.user-details__section , .accounts__section,.help__section{
+  margin-top: 40px;
+}
+.accounts__section > h3{
+  color: white;
+  margin-bottom: 20px;
+} 
+.accounts__section > a > p{
+  margin-top: 10px;
+}
+.fa-brands{
+  cursor: pointer;
+}
+.section-3{
+  display: flex;
+  background-color: black;
+  color: rgb(167, 167, 167);
+  height: 150px;
+}
+.section-3 > div:first-child{
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-right: 250px;
+}
+.section-3 > div:first-child > * {
+  margin-bottom: 10px;
+}
+.section-3 > div:first-child > p:nth-child(2){
+  margin-left: 15px;
+}
+.section-3 > div:nth-child(2) > div:first-child{
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+}
+.section-3 > div:nth-child(2) > div:first-child > a{
+  text-decoration: none;
+  color: white;
+}
+.section-3 > div:nth-child(2) > div:first-child + a > p{
+  margin-top: 10px;
+}
+.section-3 > div:nth-child(2)> div:first-child + a{
+  text-decoration: none;
+  color: rgb(167, 167, 167);
+}
+
+
+
+
+/* navbar---------------- */
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #navbar__container {
+    color: white;
+    background-color: black;
+    padding-top: 20px;
+    z-index: 200;
+  }
+  #navbar__container > div > p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 16px 7px 0;
+    letter-spacing: 2px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  #navbar__container > div > div {
+    width: 100px;
+    display: flex;
+    padding-right: 50px;
+  }
+  #navbar__container > div > :nth-child(2) > div {
+    padding: 14px 7px 0;
+  }
+  .menu__item {
+    height: 20px;
+    width: 20px;
+  }
+  .menu__item > a > img {
+    width: 20px;
+    height: 20px;
+  }
+  #logo > img {
+    width: 100%;
+    display: inline-block;
+  }
+  #navbar__container > :first-child {
+    display: flex;
+    justify-content: space-between;
+    margin: 13px auto 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  #navbar__container > :nth-child(2) {
+    width: 350px;
+    margin: auto;
+    margin-top: 8px;
+    z-index: 3;
+  }
+  #logo {
+    font-size: 35px;
+    text-decoration: none;
+  }
+  #section {
+    display: flex;
+    margin-left: 55px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+  #section > :first-child {
+    width: 8%;
+    border-bottom: 1px solid white;
+  }
+  #section > :first-child > img {
+    padding-bottom: 6px;
+  }
+  #section > :first-child > input:focus {
+    border: none;
+  }
+  #section > :first-child > input {
+    padding-left: 4px;
+  }
+  #section > :first-child > ::placeholder {
+    letter-spacing: 1.5px;
+    line-height: 35px;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #929289;
+  }
+  #section > :nth-child(2) {
+    width: 76%;
+  }
+  #section > :nth-child(2) > div {
+    display: flex;
+  }
+  #section > :nth-child(2) > div > div {
+    padding-right: 45px;
+  }
+  #section > :nth-child(2) > div > div > a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+  #navbar__container > :nth-child(3) > div > img {
+    width: 20px;
+    height: 20px;
+  }
+  .search {
+    background-color: black;
+    border: 0;
+    color: white;
+  }
+  .search:focus {
+    outline: none;
+  }

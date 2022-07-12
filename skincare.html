@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Inconsolata&family=Overpass:wght@200&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        font-family:'Encode Sans', sans-serif;
+    }
+    h3{
+        font-family:calibri
+    }
+    #skincareProducts{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin:auto;
+        width:90%;
+        gap:50px
+    }
+    #skincareProducts > div{
+        width:400px;
+        text-align:center;
+        line-height:10px
+    }
+    #skincareProducts > div>img{
+        width:100%;
+    }
+    button{
+        padding:5px 30px 5px 30px;
+        color:white;
+        background-color:black;
+        font-weight:bold;
+        font-size:17px
+    }
+    #top{
+        width:95%;
+        display:flex;
+        justify-content:flex-end
+    }
+    #sortPrice{
+        padding:10px 20px 10px 20px;
+        text-align:left;
+        font-family:calibri;
+        font-size:16px;
+        font-weight:bold;
+        border:2px solid black;
+    }
+    #header{
+        width:100%;
+        height:auto
+    }
+    img{
+        width:100%;
+        height:300px
+    }
+    #header{
+        position:relative
+    }
+    #header>h1{
+        position:absolute;
+        color:white;
+        margin-left:650px;
+        margin-top:130px;
+
+    }
+    #navbar__container {
+        color: white;
+        background-color: black;
+        padding-top: 20px;
+        z-index: 200;
+      }
+      #navbar__container > div > p {
+        font-size: 11px;
+        font-weight: bold;
+        padding: 16px 7px 0;
+        letter-spacing: 2px;
+        margin-left: 50px;
+        cursor: pointer;
+      }
+      #navbar__container > div > div {
+        width: 100px;
+        display: flex;
+        padding-right: 50px;
+      }
+      #navbar__container > div > :nth-child(2) > div {
+        padding: 14px 7px 0;
+      }
+      .menu__item {
+        height: 20px;
+        width: 20px;
+      }
+      .menu__item > a > img {
+        width: 20px;
+        height: 20px;
+      }
+      #logo > img {
+        width: 100%;
+        height:35px;
+        display: inline-block;
+      }
+      #navbar__container > :first-child {
+        display: flex;
+        justify-content: space-between;
+        margin: 13px auto 0;
+        position: absolute;
+        width: 100%;
+        top: 0;
+      }
+      #navbar__container > :nth-child(2) {
+        width: 350px;
+        margin: auto;
+        margin-top: 8px;
+        z-index: 3;
+      }
+      #logo {
+        font-size: 35px;
+        text-decoration: none;
+      }
+      #section {
+        display: flex;
+        margin-left: 55px;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-bottom: 10px;
+      }
+      #section > :first-child {
+        width: 8%;
+        border-bottom: 1px solid white;
+      }
+      #section > :first-child > img {
+        padding-bottom: 6px;
+      }
+      #section > :first-child > input:focus {
+        border: none;
+      }
+      #section > :first-child > input {
+        padding-left: 4px;
+      }
+      #section > :first-child > ::placeholder {
+        letter-spacing: 1.5px;
+        line-height: 35px;
+        font-size: 13px;
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #929289;
+      }
+      #section > :nth-child(2) {
+        width: 76%;
+      }
+      #section > :nth-child(2) > div {
+        display: flex;
+      }
+      #section > :nth-child(2) > div > div {
+        padding-right: 45px;
+      }
+      #section > :nth-child(2) > div > div > a {
+        white-space: nowrap;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+      }
+      .section {
+        display: none;
+        position: sticky;
+        top: 0;
+        padding-left: 55px;
+        padding-top: 15px;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        background-color: black;
+      }
+      .section > :first-child {
+        display: flex;
+        width: 10%;
+        border-bottom: 1px solid white;
+      }
+      .section > :first-child > img {
+        width: 20px;
+        padding-bottom: 6px;
+      }
+      .section > :first-child > input:focus {
+        border: none;
+      }
+      .section > :first-child > input {
+        padding-left: 4px;
+      }
+      .section > :first-child > ::placeholder {
+        letter-spacing: 1.5px;
+        line-height: 35px;
+        font-size: 13px;
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #929289;
+      }
+      .section > :nth-child(2) {
+        width: 55%;
+      }
+      .section > :nth-child(2) > div {
+        display: flex;
+      }
+      .section > :nth-child(2) > div > div {
+        padding-right: 45px;
+      }
+      .section > :nth-child(2) > div > div > a {
+        white-space: nowrap;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+      }
+      .section > :nth-child(3) {
+        display: flex;
+        width: 7%;
+        margin-right: 70px;
+        justify-content: space-between;
+      }
+      #navbar__container > :nth-child(3) > div > img {
+        width: 20px;
+        height: 20px;
+      }
+      input {
+        background-color: black;
+        border: 0;
+        color: white;
+      }
+      input:focus {
+        outline: none;
+      }
+      .carousel {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+      }
+      .carousel__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .carousel__track-container {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      .carousel__track {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        height: 100%;
+        transition: transform 300ms ease-in-out;
+      }
+      .carousel__slide {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .carousel__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 100;
+      }
+      .carousel__button--left {
+        left: 0px;
+      }
+      .carousel__button--right {
+        right: 10px;
+      }
+      .carousel__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 200px;
+        height: 30px;
+        left: 44%;
+        bottom: 10px;
+      }
+      .carousel__indicator {
+        width: 4px;
+        height: 4px;
+        background: rgba(215, 189, 189, 0.3);
+        margin: 0 7px;
+        cursor: pointer;
+      }
+      .carousel__indicator.current-slide {
+        background: rgba(222, 215, 215, 0.8);
+      }
+      .products__container {
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 600px;
+        width: 93%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+      }
+      .products__container > .products__title {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+        letter-spacing: 8px;
+      }
+      .product__category {
+        display: flex;
+        margin: auto;
+        border-bottom: 1px solid rgb(186, 182, 182);
+        cursor: pointer;
+      }
+      .product__category > div {
+        box-sizing: border-box;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .product__category > div > div {
+        /* border: 1px solid brown; */
+        padding: 10px 70px;
+      }
+      .product__category > div > div:hover {
+        border-bottom: 1px solid black;
+      }
+      .product__category > div > div > a {
+        display: inline-block;
+        margin: auto;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 14px;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 1px;
+      }
+      .banner__image1 {
+        position: relative;
+        background: url("https://www.bobbibrown.in/media/export/cms/36696/Acn_BB_Desktop_HP_2880x1462_1.jpg");
+        width: 93%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        margin: auto;
+        margin-bottom: 70px;
+      }
+      .banner__image1 > div > :first-child {
+        font-size: 50px;
+        font-family: "Oswald", sans-serif;
+        letter-spacing: 8px;
+        margin-bottom: 10px;
+      }
+      .banner__image1 > div > :nth-child(2) > p {
+        font-weight: 100;
+        line-height: 30px;
+        font-size: 17px;
+        margin-bottom: 15px;
+      }
+      .banner__image1 > div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 45px;
+      }
+      .banner__image1 > div > :last-child > button {
+        color: white;
+        background-color: black;
+        padding: 8px 12px;
+        cursor: pointer;
+        border: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      .banner__image1 > div > :last-child > button:hover {
+        background-color: rgba(0, 0, 0, 0.75);
+      }
+      .banner__image2 {
+        position: relative;
+        background: url("https://www.bobbibrown.in/media/export/cms/36696/Acn_BB_Desktop_HP_2880x1462.jpg");
+        width: 93%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        margin: auto;
+        margin-bottom: 70px;
+      }
+      .banner__image2 > div > :first-child {
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+        letter-spacing: 8px;
+        line-height: 55px;
+        margin-bottom: 15px;
+      }
+      .banner__image2 > div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 45px;
+      }
+      .banner__image2 > div > :nth-child(2) > p {
+        font-weight: 100;
+        line-height: 30px;
+        font-size: 17px;
+        margin-bottom: 15px;
+      }
+      .banner__image2 > div > :last-child > button {
+        color: white;
+        background-color: black;
+        padding: 8px 12px;
+        cursor: pointer;
+        border: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      .banner__image3 {
+        position: relative;
+        background: url("https://www.bobbibrown.in/media/export/cms/Acn_BB_Desktop_HP_2880x1594.jpg");
+        width: 93%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        margin: auto;
+        margin-bottom: 70px;
+      }
+      .banner__image3 > div > :first-child {
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+        letter-spacing: 8px;
+        line-height: 60px;
+        margin-bottom: 15px;
+      }
+      .banner__image3 > div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 45px;
+      }
+      .banner__image3 > div > :nth-child(2) > p {
+        font-weight: 100;
+        line-height: 30px;
+        font-size: 17px;
+        margin-bottom: 15px;
+      }
+      .banner__image3 > div > :last-child > button {
+        color: white;
+        background-color: black;
+        padding: 8px 12px;
+        cursor: pointer;
+        border: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      .banner__image4 {
+        background: url("https://www.bobbibrown.in/media/export/cms/Acn_BB_1200x1200.jpg");
+        width: 93%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        margin: auto;
+        margin-bottom: 70px;
+      }
+      .ingredients__matter__container {
+        display: flex;
+        width: 93%;
+        margin: auto;
+        box-sizing: border-box;
+      }
+      .ingredients__matter__container > :first-child {
+        position: relative;
+        background-color: black;
+        color: white;
+        height: 700px;
+        width: 50%;
+      }
+      .ingredients__matter__container > :first-child > div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 45px;
+      }
+      .ingredients__matter__container > :first-child > div > :first-child {
+        font-family: "Oswald", sans-serif;
+        font-size: 50px;
+        letter-spacing: 8px;
+        line-height: 60px;
+        margin-bottom: 15px;
+      }
+      .ingredients__matter__container > :first-child > div > :nth-child(2) {
+        font-weight: 100;
+        line-height: 30px;
+        font-size: 17px;
+        margin-bottom: 15px;
+      }
+      .ingredients__matter__container
+        > :first-child
+        > div
+        > :last-child
+        > button {
+        padding: 8px 12px;
+        cursor: pointer;
+        border: none;
+        font-weight: 600;
+        letter-spacing: 3px;
+        font-family: "Oswald", sans-serif;
+      }
+      .ingredients__matter__container
+        > :first-child
+        > div
+        > :last-child
+        > button:hover {
+        background-color: rgba(97, 97, 97, 0.75);
+        color: white;
+      }
+      .ingredients__matter__container > :last-child {
+        width: 50%;
+      }
+      .new {
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+        margin: auto;
+        width: 85%;
+        height: 650px;
+        box-sizing: border-box;
+        /* border: 1px solid red; */
+      }
+      .card {
+        white-space: nowrap;
+        width: 373px;
+        text-align: center;
+        /* border: 1px solid red; */
+      }
+      .text__container-p {
+        height: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 25px;
+      }
+      .card > p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .tab_image {
+        width: 100%;
+      }
+      .btn__left{
+        position: absolute;
+        top: 200%;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .btn__right{
+        position: absolute;
+        top: 200%;
+        right: 20px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .cart-btn{
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        width: 150px;
+        height: 35px;
+        cursor: pointer;
+      }
+      .section-2{
+        display: flex;
+        width: 93%;
+        justify-content: space-between;
+        margin: auto;
+      }
+      .section-2 > div{
+        width: 22%;
+      }
+      .section-2 > div > :first-child > img {
+        width: 100%;
+      }
+      .section-2 > div > :nth-child(2) > h4{
+        margin-top: 20px;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+      .section-2 > div > :nth-child(3) > p{
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+      .section-2 > div > :last-child{
+        text-decoration: none;
+        color: black;
+        text-decoration: underline;
+        font-size: 11px;
+        letter-spacing: 1px;
+      }
+      .section-2 > div > :last-child:hover{
+        color: red;
+      }
+      .black{
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+      }
+      .footer__container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        background-color: black;
+      }
+      .footer__container > .help__section,.accounts__section > h3{
+        color: white;
+      }
+      .footer__container > div > a{
+        text-decoration: none;
+        color: white;
+      }
+      .user-details__section{
+        width: 260px;
+        margin-right: 290px;
+      }
+      .user-details__section > a > p{
+        font-weight: 300;
+        text-decoration: underline;
+        color: white;
+      }
+      .user-details__section > button{
+        margin-top: 20px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        padding: 12px 10px;
+        cursor: pointer;
+      }
+      .user-details__section > input {
+        border: 1px solid white;
+        height: 40px;
+        width: 250px;
+      }
+      .user-details__section > h4{
+        color: white;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-weight: 6
+        
+        
+        00;
+      }
+      .user-details__section > input::placeholder{
+        color: white;
+        padding-left: 15px;
+      }
+      .user-details__section > div{
+        margin-top: 30px;
+        display: flex;
+        gap: 25px;
+      }
+      .user-details__section > *{
+        margin-bottom: 20px;
+      }
+      .help__section{
+        margin-left: 50px;
+      }
+      .help__section > select{
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        width: 250px;
+        height: 40px;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .help__section > a > *{
+        margin-top: 10px;
+      }
+      .user-details__section , .accounts__section,.help__section{
+        margin-top: 40px;
+      }
+      .accounts__section > h3{
+        color: white;
+        margin-bottom: 20px;
+      } 
+      .accounts__section > a > p{
+        margin-top: 10px;
+      }
+      .fa-brands{
+        cursor: pointer;
+      }
+      .section-3{
+        display: flex;
+        background-color: black;
+        color: rgb(167, 167, 167);
+        height: 150px;
+      }
+      .section-3 > div:first-child{
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-right: 250px;
+      }
+      .section-3 > div:first-child > * {
+        margin-bottom: 10px;
+      }
+      .section-3 > div:first-child > p:nth-child(2){
+        margin-left: 15px;
+      }
+      .section-3 > div:nth-child(2) > div:first-child{
+        margin-top: 30px;
+        display: flex;
+        gap: 50px;
+      }
+      .section-3 > div:nth-child(2) > div:first-child > a{
+        text-decoration: none;
+        color: white;
+      }
+      .section-3 > div:nth-child(2) > div:first-child + a > p{
+        margin-top: 10px;
+      }
+      .section-3 > div:nth-child(2)> div:first-child + a{
+        text-decoration: none;
+        color: rgb(167, 167, 167);
+      }
+</style>
+<body>
+    <div id="navbar__container">
+        <div>
+          <p>EMAIL SIGN UP</p>
+          <div>
+            <div class="menu__item">
+              <a href="#">
+                <img
+                  src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"
+                  alt="location"
+                />
+              </a>
+            </div>
+            <div class="menu__item">
+              <a href="#">
+                <img
+                  src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"
+                  alt="profile"
+                />
+              </a>
+            </div>
+            <div class="menu__item">
+              <a href="Ncart.html">
+                <img
+                  src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"
+                  alt="cart"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="homepage.html" id="logo">
+            <img
+              src="https://www.bobbibrown.in/media/export/cms/logo.png"
+              alt="Bobbi Brown"
+            />
+          </a>
+        </div>
+        <div id="section">
+          <div>
+            <img
+              src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg"
+              alt="search_icon"
+            />
+            <input type="text" placeholder="SEARCH" />
+          </div>
+          <div>
+            <div>
+              <div class="link_wrapper"><a href="#">NEW</a></div>
+              <div class="link_wrapper"><a href="#">FAVOURITES</a></div>
+              <div class="link_wrapper"><a href="makeup.html">MAKEUP</a></div>
+              <div class="link_wrapper"><a href="skincare.html">SKINCARE</a></div>
+              <div class="link_wrapper"><a href="#">MINIBAR</a></div>
+              <div class="link_wrapper"><a href="#">OFFERS</a></div>
+              <div class="link_wrapper"><a href="#">VIRTUAL SERVICES</a></div>
+              <div class="link_wrapper"><a href="#">DISCOVER</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div>
+          <img
+            src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg"
+            alt="search_icon"
+          />
+          <input type="text" placeholder="SEARCH" />
+        </div>
+        <div>
+          <div>
+            <div class="link_wrapper"><a href="#">NEW</a></div>
+            <div class="link_wrapper"><a href="#">FAVOURITES</a></div>
+            <div class="link_wrapper"><a href="#">MAKEUP</a></div>
+            <div class="link_wrapper"><a href="#">SKINCARE</a></div>
+            <div class="link_wrapper"><a href="#">MINIBAR</a></div>
+            <div class="link_wrapper"><a href="#">OFFERS</a></div>
+            <div class="link_wrapper"><a href="#">VIRTUAL SERVICES</a></div>
+            <div class="link_wrapper"><a href="#">DISCOVER</a></div>
+          </div>
+        </div>
+        <div>
+          <div class="menu__item">
+            <a href="#">
+              <img
+                src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"
+                alt="location"
+              />
+            </a>
+          </div>
+          <div class="menu__item">
+            <a href="usersign.html">
+              <img
+                src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"
+                alt="profile"
+              />
+            </a>
+          </div>
+          <div class="menu__item">
+            <a href="Ncart.html">
+              <img
+                src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"
+                alt="cart"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    <div id="header">
+        <h1>SKINCARE</h1>
+        <img src="https://www.bobbibrown.in/media/export/cms/mpp/FY19/MPP-Category-Header-PC-Skincare_@2x.jpg"/>
+    </div>
+    <div id="top">
+        <select id="sortPrice" onchange="handlePriceSort()">
+            <option value="">SORT BY</option>
+            <option value="asc">PRICE (LOW TO HIGH)</option>
+            <option value="dsc">PRICE (HIGH TO LOW)</option>
+        </select>
+    </div>
+    <div id="skincareProducts"></div>
+    <footer>
+        <div class="footer__container">
+          <div class="help__section">
+            <h3>NEED HELP?</h3>
+            <a href="#"><p>Email Customer Service</p></a>
+            <a href="#"><p>Call Us</p></a>
+            <a href="#"><p>Shipping & Return policy</p></a>
+            <a href="#"><p>FAQS</p></a>
+            <a href="#"><p>Careers</p></a>
+            <a href="#"><p>English | Hindi</p></a>
+            <select id="location">
+              <option value="choose">CHOOSE LOCATION</option>
+              <option value="India">INDIA</option>
+              <option value="Bangladesh">BANGLADESH</option>
+              <option value="Pakistan">PAKISTAN</option>
+              <option value="Usa">USA</option>
+              <option value="Uk">UK</option>
+            </select>
+          </div>
+          <div class="accounts__section">
+            <h3>MY BOBBI BROWN</h3>
+            <a href="#"><p>My Account</p></a>
+            <a href="#"><p>My Account</p></a>
+            <a href="#"><p>Store Locator</p></a>
+          </div>
+          <div class="user-details__section">
+            <input type="text" id="email" placeholder="ENTER YOUR EMAIL">
+            <input type="text" id="phone" placeholder="ENTER YOUR MOBILE PHONE">
+            <a href="#"><p>How do we use your data?</p></a>
+            <button>SUBMIT</button>
+            <h4>FOLLOW US</h4>
+            <div>
+              <div>
+                <a href="#"><i class="fa-brands fa-2x fa-facebook-f black"></i></a>
+              </div>
+              <div>
+                <a href="#"><i class="fa-brands fa-2x fa-youtube black"></i></a>
+              </div>
+              <div>
+                <a href="#"><i class="fa-brands fa-instagram fa-2x black"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="section-3">
+          <div>
+            <p>© Bobbi Brown Professional Cosmecticcs, Inc. All worldwide rights reserved.</p>
+            <p>Sold by Shoppers Stop Ltd.</p>
+          </div>
+          <div>
+            <div>
+              <a href="#"><p>Terms and Conditions</p></a>
+              <a href="#"><p>Terms of Use</p></a>
+            </div>
+            <a href="#"><p>Privacy and Cookie Policy</p></a>
+          </div>
+        </div>
+      </footer>
+</body>
+<script>
+    var skincare_data=[
+        {
+            name:'VITAMIN ENRICHED FACE BASE',
+            desc:'Moisturizer and primer in one',
+            category:'Category:Skincare',
+            price:'5800.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_E1LM01_600x600_0.jpg',
+        },
+        {
+            name:'PRIMER PLUS HYDRATING 3-IN-1 SETTING SPRAY',
+            desc:'Prep, finish and refresh mist',
+            category:'Category:Skincare',
+            price:'3200.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EKLW01_600x600_0.jpg',
+        },
+        {
+            name:'LIP BALM SPF 15',
+            desc:'Comforting lip treatment with SPF',
+            category:'Category:Skincare',
+            price:'3200.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_E1FN01_600x600_0.jpg',
+        },
+        {
+            name:'LUXE ILLUMINATING DUO',
+            desc:'The ultimate illuminating duo',
+            category:'Category:Skincare',
+            price:'4400.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERX6Y1_600x600_0.jpg',
+        },
+        {
+            name:'OPALESCENT DREAM EYE SHADOW PALETTE',
+            desc:'Palette of rich purples and warm metallics',
+            category:'Category:Skincare',
+            price:'3900.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERJ9Y1_600x600_0.jpg',
+        },
+        {
+            name:'GOLDEN ILLUSION EYE SHADOW PALETTE',
+            desc:'Warm, decadent eye shadow palette',
+            category:'Category:Skincare',
+            price:'5700.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERJAY1_600x600_0.jpg',
+        },
+        {
+            name:'INTENSIVE SERUM FOUNDATION SPF 40/30',
+            desc:'Radiance-boosting foundation',
+            category:'Category:Skincare',
+            price:'6700.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EME715_600x600_0.jpg',
+        },
+        {
+            name:'SKIN CONCEALER STICK',
+            desc:'Easy-to-use, long-lasting concealer stick.',
+            category:'Category:Skincare',
+            price:'2850.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERFJ01_600x600_0.jpg',
+        },
+        {
+            name:'MINI CRUSHED LIP COLOR',
+            desc:'The look of a lipstick meets the feel of a balm',
+            category:'Category:Skincare',
+            price:'1300.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERLC01_600x600_0.jpg',
+        },
+        {
+            name:'FACE AND CHEEK PALETTE',
+            desc:'The look of a lipstick meets the feel of a balm',
+            category:'Category:Skincare',
+            price:'4250.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPYL03_600x600_0.jpg',
+        },
+        {
+            name:'SKIN LONG-WEAR WEIGHTLESS FOUNDATION MINI',
+            desc:'16-hour, medium coverage matte formula',
+            category:'Category:Skincare',
+            price:'1990.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERE012_600x600_0.jpg',
+        },
+        {
+            name:'MINI CRUSHED LIP COLOR - RUBY',
+            desc:'The look of a lipstick meets the feel of a balm',
+            category:'Category:Skincare',
+            price:'1300.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERYM01_600x600_0.jpg',
+        },
+        {
+            name:'SHEER FINISH PRESSED POWDER',
+            desc:'Portable, oil-absorbing powder',
+            category:'Category:Skincare',
+            price:'3900.00',
+            img:'	https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ENPT05_600x600_0.jpg',
+        },
+        {
+            name:'MINI HIGHLIGHTING POWDER',
+            desc:'Mini pearlescent illuminator',
+            category:'Category:Skincare',
+            price:'2150.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPH201_600x600_0.jpg',
+        },
+        {
+            name:'MINI SMOKEY EYE MASCARA',
+            desc:'Ultra-black, volumising formula',
+            category:'Category:Skincare',
+            price:'1900.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERYL01_600x600_0.jpg',
+        },
+        {
+            name:'MINI LONG-WEAR CREAM SHADOW STICK',
+            desc:'Does-it-all, budge-proof crayon',
+            category:'Category:Skincare',
+            price:'1800.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ETF209_600x600_0.jpg',
+        },
+        {
+            name:'SHEER FINISH LOOSE POWDER',
+            desc:'Long-lasting, mattifying powder',
+            category:'Category:Skincare',
+            price:'3900.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ENPW05_600x600_0.jpg',
+        },
+        {
+            name:'MICRO BROW PENCIL',
+            desc:'Precision Definition Brow Pencil',
+            category:'Category:Skincare',
+            price:'3600.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ENJN01_600x600_0.jpg',
+        },
+        {
+            name:'MINI SHIMMER BRICK',
+            desc:'Glow-boosting highlighter',
+            category:'Category:Skincare',
+            price:'2200.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EPH101_600x600_0.jpg',
+        },
+        {
+            name:'LUXE DEFINING LIPSTICK',
+            desc:'Glow-boosting highlighter',
+            category:'Category:Skincare',
+            price:'3700.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ENJ101_600x600_0.jpg',
+        },
+        {
+            name:'REAL NUDES EYE SHADOW PALETTE',
+            desc:'Glow-boosting highlighter',
+            category:'Category:Skincare',
+            price:'4400.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ENWG01_600x600_0.jpg',
+        },
+        {
+            name:'SKIN WEIGHTLESS POWDER FOUNDATION',
+            desc:'Silky, oil-free powder formula.',
+            category:'Category:Skincare',
+            price:'4900.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ET5K15_600x600_0.jpg',
+        },
+        {
+            name:'MINI BRONZING POWDER',
+            desc:'Sun-kissed, matte-finish bronzer',
+            category:'Category:Skincare',
+            price:'2200.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ERLN01_600x600_0.jpg',
+        },
+        {
+            name:'EXTRA LIP TINT',
+            desc:'Sheer tinted lip balm',
+            category:'Category:Skincare',
+            price:'2600.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EER903_600x600_0.jpg',
+        },
+        {
+            name:'ULTRA PRECISE EYE LINER BRUSH',
+            desc:'Super-fine, firm brush for eyes',
+            category:'Category:Skincare',
+            price:'4000.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EETX01_600x600_0.jpg',
+        },
+        {
+            name:'SKIN LONG-WEAR FLUID FOUNDATION SPF 20',
+            desc:'Liquid-to-powder foundation',
+            category:'Category:Skincare',
+            price:'3600.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_ENHM04_600x600_0.jpg',
+        },
+        {
+            name:'ANGLED FACE BRUSH',
+            desc:'Soft, sturdy highlighter brush',
+            category:'Category:Skincare',
+            price:'5800.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EF0X01_600x600_0.jpg',
+        },
+        {
+            name:'SOOTHING CLEANSING OIL',
+            desc:'Gentle Skincare-dissolving oil',
+            category:'Category:Skincare',
+            price:'3900.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EM4201_600x600_0.jpg',
+        },
+        {
+            name:'LONG-WEAR GEL EYELINER',
+            desc:'Precise, liquid-like gel liner',
+            category:'Category:Skincare',
+            price:'3900.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_E0KK01_600x600_0.jpg',
+        },
+        {
+            name:'SKIN FOUNDATION SPF 15',
+            desc:'Water-based, oil-free formula',
+            category:'Category:Skincare',
+            price:'3900.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_E2LE12_600x600_0.jpg',
+        },
+        {
+            name:'LONG-WEAR EYE BASE',
+            desc:'Crease-proof eyeshadow primer',
+            category:'Category:Skincare',
+            price:'3900.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_E85F02_600x600_0.jpg',
+        },
+        {
+            name:'BRIGHTENING BRICK',
+            desc:'Illuminating blush and bronzer',
+            category:'Category:Skincare',
+            price:'3900.00',
+            img:'	https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EA6L06_600x600_0.jpg',
+        },
+        {
+            name:'INTENSIVE SKIN SERUM CONCEALER',
+            desc:'Brightens and boosts hydration',
+            category:'Category:Skincare',
+            price:'3900.00',
+            img:'https://www.bobbibrown.in/media/export/cms/products/600x600/bb_sku_EN6F11_600x600_0.jpg',
+        }
+
+    ]
+    
+    // localStorage.setItem('cartData',JSON.stringify('skincare_data'))
+
+    var skincareProducts=document.querySelector('#skincareProducts')
+
+    var cartLSdata=JSON.parse(localStorage.getItem('cartsData')) || []
+
+    function display(data){
+        skincareProducts.innerHTML=null
+
+        data.forEach(function(elem){
+            var card=document.createElement('div')
+
+            var img=document.createElement('img')
+            img.src=elem.img
+
+            var name=document.createElement('h3')
+            name.innerText=elem.name
+
+            var desc=document.createElement('p')
+            desc.innerText=elem.desc
+            
+            var category=document.createElement('p')
+            category.innerText=elem.category
+
+            var price=document.createElement('p')
+            price.innerText=elem.price
+
+            var button=document.createElement('button')
+            button.innerText='Add to Bag'
+            button.addEventListener('click',function(){
+                addtoBag(elem)
+            })
+
+            card.append(img,name,desc,category,price,button)
+
+            skincareProducts.append(card)
+        })
+    }
+    display(skincare_data)
+
+    // function addtoBag(elem){
+    //     cartLSdata.push(elem);
+    //     localStorage.setItem('cartsData',JSON.stringify(cartLSdata))
+    //     alert('data been pushed')
+    // }
+
+    function addtoBag(el){
+    checkcart(el,cartLSdata)
+
+    if(checkcart(el,cartLSdata)==true){
+        updatacount(el)
+        localStorage.setItem("cartData",JSON.stringify(cartLSdata))
+    }
+    else{
+        el["count"]=1
+        cartLSdata.push(el)
+        localStorage.setItem("cartData",JSON.stringify(cartLSdata))
+    }  
+    }
+
+    function checkcart(el,cartLSdata){
+    for(i=0;i<cartLSdata.length;i++){
+        if(el.name==cartLSdata[i].name)
+        {
+            return true
+        }       
+    }
+    return false 
+    }
+
+    function updatacount(el)
+    {
+    for(i=0;i<cartLSdata.length;i++)
+    {
+     if(el.name==cartLSdata[i].name)
+     {        
+        cartLSdata[i].count+=Number(1)       
+     }
+    }
+    }
+
+    function handlePriceSort()
+    {
+        var selected=document.querySelector('#sortPrice').value
+        if (selected=='dsc')
+        {
+            skincare_data.sort(function(a,b){
+                return b.price-a.price
+            })
+            display(skincare_data)
+        }
+        if (selected=='asc')
+        {
+            skincare_data.sort(function(a,b){
+                return a.price-b.price
+            })
+            display(skincare_data)
+        }
+    }
+
+
+</script>
+</html>
